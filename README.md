@@ -1,3 +1,10 @@
+build.gradle(Moudle:app)
+
+    dependencies {
+      implementation 'com.android.support:appcompat-v7:28.0.0'
+      implementation 'com.android.support:design:28.0.0'
+    }
+
 先建立需要的布局
 
 1.activity_main.xml
