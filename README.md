@@ -35,7 +35,7 @@
 
     </android.support.v4.widget.DrawerLayout>
           
-2.nav_header.xml  (Navigation上方那塊區域)
+2.nav_header.xml (Navigation上方那塊區域)
 
     <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -70,3 +70,22 @@
             app:srcCompat="@drawable/android_logo" />
 
     </android.support.constraint.ConstraintLayout>
+    
+3.drawer_view.xml (Navigation裡面的項目) 
+
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_eye"
+                android:icon="@drawable/eye"
+                android:title="眼睛" />
+            <item
+                android:id="@+id/nav_bus"
+                android:icon="@drawable/bus"
+                android:title="公車" />
+            <item
+                android:id="@+id/nav_plane"
+                android:icon="@drawable/plane"
+                android:title="飛機" />
+        </group>
+    </menu>
