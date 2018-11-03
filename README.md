@@ -105,3 +105,47 @@ manifest(讓原本內建的ActionBar消失)
                 android:title="飛機" />
         </group>
     </menu>
+
+MainActivity.java
+
+    drawerLayout = findViewById(R.id.drawer_layout);
+    Toolbar toolbar = findViewById(R.id.toolbar);
+    NavigationView navigationView  = findViewById(R.id.nav_view);
+    setSupportActionBar(toolbar);//設定自定義的toolbar
+
+    ActionBar actionBar = getSupportActionBar();//取得actionBar物件
+    actionBar.setDisplayHomeAsUpEnabled(true);//顯示選單按鈕
+    actionBar.setHomeAsUpIndicator(R.drawable.menu_list);//選單圖示
+    
+    //設定navigation裡的點擊事件
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                menuItem.setCheckable(true);
+                int id = menuItem.getItemId();
+                switch (id){
+                    case R.id.nav_eye:
+                        Toast.makeText(MainActivity.this,"眼睛",Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.nav_plane:
+                        Toast.makeText(MainActivity.this,"飛機",Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.nav_bus:
+                        Toast.makeText(MainActivity.this,"公車",Toast.LENGTH_SHORT).show();
+                        break;
+                }
+                drawerLayout.closeDrawers();
+                return true;
+            }
+        });
+        
+    //選單被點擊
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case android.R.id.home:
+                drawerLayout.openDrawer(GravityCompat.START);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
