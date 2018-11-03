@@ -1,6 +1,7 @@
 先建立需要的布局
- 1.   
- 
+
+activity_main.xml
+
     <FrameLayout
           android:id="@+id/content_frame"
           android:layout_width="match_parent"
