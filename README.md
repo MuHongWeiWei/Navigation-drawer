@@ -1,3 +1,6 @@
+
+![image](https://github.com/MuHongWeiWei/Navigation-drawer/blob/master/Screenshot_1541262678.png)
+
 build.gradle(Moudle:app)
 
     dependencies {
