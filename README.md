@@ -7,12 +7,12 @@ build.gradle(Moudle:app)
 
 manifest(讓原本內建的ActionBar消失)
 
-<manifest ...>
-  <application
+    <manifest ...>
+      <application
+          ...
+          android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
       ...
-      android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-  ...
-</manifest>
+    </manifest>
     
 先建立需要的布局
 
