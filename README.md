@@ -1,5 +1,8 @@
 
-![image](https://github.com/MuHongWeiWei/Navigation-drawer/blob/master/Screenshot_1541262678.png)
+![image](https://github.com/MuHongWeiWei/Navigation-drawer/blob/master/Screenshot_1.png)
+![image](https://github.com/MuHongWeiWei/Navigation-drawer/blob/master/Screenshot_2.png)
+![image](https://github.com/MuHongWeiWei/Navigation-drawer/blob/master/Screenshot_3.png)
+
 
 build.gradle(Moudle:app)
 
